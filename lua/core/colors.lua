@@ -1,7 +1,7 @@
 vim.opt.termguicolors = true
 
 function set_color(color)
-    color = color or "gruvbox"
+    color = color or "catppuccin-latte"
     vim.cmd.colorscheme(color)
 end
 

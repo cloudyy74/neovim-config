@@ -98,7 +98,14 @@ require("lazy").setup({
         vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
         vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
-}, {'lervag/vimtex'}, {'lyokha/vim-xkbswitch'}, {'ap/vim-css-color'}, {'talha-akram/noctis.nvim'}, {'sainnhe/sonokai'},
+}, {'lervag/vimtex',
+     lazy = false,
+     init = function()
+         vim.g.tex_flavor = "latex"
+         vim.g.vimtex_view_method = "mupdf"
+     end
+
+}, {'lyokha/vim-xkbswitch'}, {'ap/vim-css-color'}, {'talha-akram/noctis.nvim'}, {'sainnhe/sonokai'},
 {
     "mfussenegger/nvim-dap"
 },
