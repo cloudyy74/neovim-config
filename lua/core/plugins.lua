@@ -61,23 +61,14 @@ require("lazy").setup({
     end
     }, {"williamboman/mason.nvim"},
     { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...}, 
-    {'navarasu/onedark.nvim'}, {'mhartington/oceanic-next'}, {'glepnir/zephyr-nvim'},
+    {'mhartington/oceanic-next'}, {'glepnir/zephyr-nvim'},
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.8',
         dependencies = {'nvim-lua/plenary.nvim'}
-    }, {'Djancyp/outline'},
-    {'windwp/nvim-autopairs'}, {'terrortylor/nvim-comment'}, {'pocco81/auto-save.nvim'},
-    {'windwp/nvim-ts-autotag'}, {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
-            "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker"
-        }
     },
+    {'windwp/nvim-autopairs'}, {'terrortylor/nvim-comment'}, {'pocco81/auto-save.nvim'},
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    {'RRethy/base16-nvim'},
     {"akinsho/bufferline.nvim", dependencies = {'nvim-tree/nvim-web-devicons'}},
     {'hrsh7th/cmp-nvim-lsp-signature-help'}, {
         'linrongbin16/lsp-progress.nvim',
@@ -105,7 +96,7 @@ require("lazy").setup({
          vim.g.vimtex_view_method = "mupdf"
      end
 
-}, {'lyokha/vim-xkbswitch'}, {'ap/vim-css-color'}, {'talha-akram/noctis.nvim'}, {'sainnhe/sonokai'},
+}, {'lyokha/vim-xkbswitch'}, {'talha-akram/noctis.nvim'}, {'sainnhe/sonokai'},
 {
     "mfussenegger/nvim-dap"
 },

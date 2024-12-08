@@ -13,7 +13,7 @@ vim.opt.undofile = true
 vim.opt.shell = "/bin/bash"
 
 -- Mouse
-vim.opt.mouse = "n"
+vim.opt.mouse = ""
 vim.opt.mousefocus = true
 
 -- Line Numbers
