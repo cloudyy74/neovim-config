@@ -133,10 +133,6 @@ require("lazy").setup({
 {
     "nvim-neotest/nvim-nio"
 },
--- {
---     'sheerun/vim-polyglot',
---     lazy = false,
--- },
 {
     "nvim-treesitter/nvim-treesitter", 
     build = ":TSUpdate"
